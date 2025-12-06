@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экотуризм в России - Магазин туров</title>
+</head>
+<body>
+    
+    <header>
+        <nav style="background-color: #2E8B57; padding: 15px; text-align: center;">
+            <a href="index.html" style="display: inline-block; margin-right: 20px; text-decoration: none;">
+                <img src="https://placehold.co/40x40/2E8B57/FFFFFF/png?text=ECO" 
+                    alt="Логотип Эко-туризм" 
+                    width="40" 
+                    height="40"
+                    style="vertical-align: middle;">
+            </a>
+            <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Главная</a>
+            <a href="routes.html" style="color: white; margin: 0 10px; text-decoration: none;">Маршруты</a>
+            <a href="gallery.html" style="color: white; margin: 0 10px; text-decoration: none;">Галерея</a>
+            <a href="shop.html" style="color: white; margin: 0 10px; text-decoration: none; font-weight: bold;">Магазин</a>
+            <a href="rules.html" style="color: white; margin: 0 10px; text-decoration: none;">Правила</a>
+            <a href="booking.html" style="color: white; margin: 0 10px; text-decoration: none;">Бронирование</a>
+            <a href="index.html#contact" style="color: white; margin: 0 10px; text-decoration: none;">Контакты</a>
+            <a href="https://www.rgo.ru" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;">
+                Русское Географическое Общество
+        </nav>
+    </header>
+
+    
+    <div style="background-color: #F0FFF0; padding: 15px; text-align: center; margin: 20px; border-radius: 8px;">
+        <h3 style="color: #2E8B57; margin-top: 0;">Быстрая навигация:</h3>
+        <a href="#tours" style="color: #2E8B57; margin: 0 10px; text-decoration: none;">Туры</a>
+        <a href="#contact" style="color: #2E8B57; margin: 0 10px; text-decoration: none;">Форма заказа</a>
+    </div>
+
+    
+    
+    
+    
+    <main style="padding: 20px;">
+        <h1 style="color: #2E8B57; text-align: center;">Магазин туров</h1>
+        <p style="text-align: center; font-size: 18px; margin-bottom: 40px;">Выберите экологический тур по России</p>
+
+        
+        <section id="tours" style="margin: 40px 0;">
+            <div id="tour-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                
+            </div>
+        </section>
+
+        
+        <section id="contact" style="margin: 40px 0; background-color: #F8F8F8; padding: 30px; border-radius: 12px; border-left: 5px solid #2E8B57;">
+            <h2 style="color: #2E8B57; text-align: center; margin-bottom: 30px;">Заказать тур</h2>
+            
+            <form action="https://formsubmit.co/zavgorodnijvalentin01@gmail.com" method="POST" >
+                <input type="hidden" name="_captcha" value="false">
+                
+                <div style="display: flex; margin-bottom: 20px;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 5px;">Фамилия</label>
+                        <input type="text" name="customer_surname" required 
+                               style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px;">
+                    </div>
+                    <div style="flex: 1; min-width: 250px;">
+                        <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 5px;">Имя</label>
+                        <input type="text" name="customer_name" required 
+                               style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px;">
+                    </div>
+                </div>
+
+                <div style="display: flex; margin-bottom: 20px;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 5px;">Телефон</label>
+                        <input type="tel" name="customer_phone" required 
+                               style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px;">
+                    </div>
+                    <div style="flex: 1; min-width: 250px;">
+                        <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 5px;">Количество человек</label>
+                        <input type="number" name="group_size" min="1" max="20" value="1" required 
+                               style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px;">
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 5px;">Выберите тур</label>
+                    <select name="tour_name" required style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px;">
+                        <option value="">-- Выберите тур --</option>
+                        <option value="Алтай">Алтай - Белуха</option>
+                        <option value="Урал">Урал-Таганай</option>
+                        <option value="Карелия">Карелия - озёра</option>
+                        <option value="Байкал">Байкал - зимний</option>
+                        <option value="Карелия">Карелия - озёра</option>
+                        <option value="Карелия">Кавказ - Эльбрус</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 10px;">Уровень сложности:</label>
+                    <label style="display: block; margin-bottom: 5px;"><input type="radio" name="difficulty" value="easy" required style="margin-right: 8px;"> Лёгкий</label>
+                    <label style="display: block; margin-bottom: 5px;"><input type="radio" name="difficulty" value="medium" style="margin-right: 8px;"> Средний</label>
+                    <label style="display: block; margin-bottom: 5px;"><input type="radio" name="difficulty" value="hard" style="margin-right: 8px;"> Сложный</label>
+                </div>
+
+                <button type="submit" style="background-color: #2E8B57; color: white; padding: 15px 30px; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; width: 100%;">Отправить заказ</button>
+            </form>
+        </section>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="#top" style="color: #2E8B57; text-decoration: none; font-weight: bold; font-size: 18px;">↑ К началу страницы</a>
+        </div>
+    </main>
+
+    <footer style="background-color: #2E8B57; color: white; text-align: center; padding: 20px; margin-top: 40px;">
+        <p>© 2025 Экотуризм в России. Все права защищены.</p>
+        <p>Сайт создан в учебных целях</p>
+    </footer>
+
+    
+    <script>
+        const tours = [
+            {name: "Алтай - Белуха", price: "25 000 ₽", img: "https://club-voshod.com/files/materials/453/group_cf/altayskaya_gora_beluha_velichestvennaya_i_nepovtorimaya_3_1.jpg"},
+            {name: "Урал - Таганай", price: "45 000 ₽", img: "https://www.exje.ru/wp-content/uploads/2018/01/J45A5175.jpg"},
+            {name: "Карелия - озёра", price: "18 000 ₽", img: "https://optim.tildacdn.com/tild3863-6636-4236-b961-653031396335/-/resize/824x/-/format/webp/shutterstock_1364515.jpg.webp"},
+            {name: "Байкал - зимний", price: "32 000 ₽", img: "https://poznavaemoe.ru/upload/resize_cache/iblock/378/800_400_2/ozero-baykal.jpg"},
+            {name: "Алтай - Катунь", price: "22 000 ₽", img: "https://altai-tour.ru/upload/medialibrary/d0d/d0dbaba3ae0146914451b9d8e00588dd.jpg"},
+            {name: "Кавказ - Эльбрус", price: "38 000 ₽", img: "https://photocentra.ru/images/main73/738451_main.jpg"},   
+        ];
+
+        const container = document.getElementById('tour-container');
+        tours.forEach(tour => {
+            container.innerHTML += `
+                <div style="width: 300px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s;">
+                    <img src="${tour.img}" alt="${tour.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #2E8B57; margin-bottom: 10px; font-size: 18px;">${tour.name}</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Экологический тур с гидом. 7 дней в природе России.</p>
+                        <p style="font-size: 24px; font-weight: bold; color: #2E8B57; margin-bottom: 15px;">${tour.price}</p>
+                        <a href="#contact" style="display: block; background-color: #2E8B57; color: white; text-align: center; padding: 12px; text-decoration: none; border-radius: 6px; font-weight: bold;">Забронировать</a>
+                    </div>
+                </div>
+            `
+        });
+    </script>
+</body>
+</html>
