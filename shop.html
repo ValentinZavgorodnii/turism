@@ -25,7 +25,6 @@
             <a href="index.html#contact" style="color: white; margin: 0 10px; text-decoration: none;">Контакты</a>
             <a href="https://www.rgo.ru" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;">
                 Русское Географическое Общество
-            </a>    
         </nav>
     </header>
 
@@ -55,57 +54,58 @@
         <section id="contact" style="margin: 40px 0; background-color: #F8F8F8; padding: 30px; border-radius: 12px; border-left: 5px solid #2E8B57;">
             <h2 style="color: #2E8B57; text-align: center; margin-bottom: 30px;">Заказать тур</h2>
             
-            <form action="https://formsubmit.co/zavgorodnijvalentin01@gmail.com" method="POST" >
-                <input type="hidden" name="_captcha" value="false">
+            <form action="https://formcarry.com/s/yiD5z4n228i" method="POST">
+                <input type="hidden" name="_subject" value="Новый заказ тура">
+                <input type="email" name="_replyto" value="zavgorodnijvalentin01@gmail.com">
+                
                 
                 <div style="display: flex; margin-bottom: 20px;">
                     <div style="flex: 1; min-width: 250px;">
-                        <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 5px;">Фамилия</label>
-                        <input type="text" name="customer_surname" required 
-                               style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px;">
+                        <label style="display: block; font-weight: bold; color: #2E8B57;">Фамилия</label>
+                        <input type="text" name="customer_surname" value="Иванов" required 
+                            style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px;">
                     </div>
                     <div style="flex: 1; min-width: 250px;">
-                        <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 5px;">Имя</label>
-                        <input type="text" name="customer_name" required 
-                               style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px;">
+                        <label style="display: block; font-weight: bold; color: #2E8B57;">Имя</label>
+                        <input type="text" name="customer_name" value="Петр" required 
+                            style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px;">
                     </div>
                 </div>
 
                 <div style="display: flex; margin-bottom: 20px;">
                     <div style="flex: 1; min-width: 250px;">
-                        <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 5px;">Телефон</label>
-                        <input type="tel" name="customer_phone" required 
-                               style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px;">
+                        <label style="display: block; font-weight: bold; color: #2E8B57;">Телефон</label>
+                        <input type="tel" name="customer_phone" value="+7(999)123-45-67" required 
+                            style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px;">
                     </div>
                     <div style="flex: 1; min-width: 250px;">
-                        <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 5px;">Количество человек</label>
-                        <input type="number" name="group_size" min="1" max="20" value="1" required 
-                               style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px;">
+                        <label style="display: block; font-weight: bold; color: #2E8B57;">Количество человек</label>
+                        <input type="number" name="group_size" min="1" max="20" value="2" required 
+                            style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px;">
                     </div>
                 </div>
 
                 <div style="margin-bottom: 20px;">
-                    <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 5px;">Выберите тур</label>
-                    <select name="tour_name" required style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px;">
-                        <option value="">-- Выберите тур --</option>
+                    <label style="display: block; font-weight: bold; color: #2E8B57;">Тур</label>
+                    <select name="tour_name" required style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px;">
                         <option value="Алтай">Алтай - Белуха</option>
-                        <option value="Урал">Урал-Таганай</option>
+                        <option value="Урал">Урал - Таганай</option>
                         <option value="Карелия">Карелия - озёра</option>
-                        <option value="Байкал">Байкал - зимний</option>
-                        <option value="Карелия">Карелия - озёра</option>
-                        <option value="Кавказ">Кавказ - Эльбрус</option>
                     </select>
                 </div>
 
                 <div style="margin-bottom: 20px;">
-                    <label style="display: block; font-weight: bold; color: #2E8B57; margin-bottom: 10px;">Уровень сложности:</label>
-                    <label style="display: block; margin-bottom: 5px;"><input type="radio" name="difficulty" value="easy" required style="margin-right: 8px;"> Лёгкий</label>
-                    <label style="display: block; margin-bottom: 5px;"><input type="radio" name="difficulty" value="medium" style="margin-right: 8px;"> Средний</label>
-                    <label style="display: block; margin-bottom: 5px;"><input type="radio" name="difficulty" value="hard" style="margin-right: 8px;"> Сложный</label>
+                    <label style="display: block; font-weight: bold; color: #2E8B57;">Сложность:</label>
+                    <label><input type="radio" name="difficulty" value="easy" required> Лёгкий</label>
+                    <label><input type="radio" name="difficulty" value="medium"> Средний</label>
+                    <label><input type="radio" name="difficulty" value="hard"> Сложный</label>
                 </div>
 
-                <button type="submit" style="background-color: #2E8B57; color: white; padding: 15px 30px; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; width: 100%;">Отправить заказ</button>
+                <button type="submit" style="background-color: #2E8B57; color: white; padding: 15px 30px; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; width: 100%;">
+                    Отправить заказ
+                </button>
             </form>
+
         </section>
 
         <div style="text-align: center; margin: 40px 0;">
